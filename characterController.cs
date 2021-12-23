@@ -21,9 +21,9 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         var horizontal = Input.GetAxis("Horizontal");
-        var vertival = Input.GetAxis("Vertical");
+        var vertical = Input.GetAxis("Vertical");
 
-        var movement = new Vector3(horiontal, 0, vertical);
+        var movement = new Vector3(horizontal, 0, vertical);
 
         characterController.SimpleMovement(movement * Time.deltaTime * moveSpeed);
 
